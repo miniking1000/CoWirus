@@ -1,0 +1,729 @@
+global:
+  period: 300
+  stages: 9
+stage_1:
+  Tfrom: 216000
+  message: '&5Вы чувствуете, что Вам становится хуже...'
+  main:
+    low: 0.0
+    high: 0.07
+    sun:
+      particle: true
+      effects:
+        CONFUSION:
+          duration: 400
+          power: 0
+    cave:
+      particle: true
+      effects:
+        CONFUSION:
+          duration: 400
+          power: 0
+    end:
+      particle: true
+      effects:
+        CONFUSION:
+          duration: 400
+          power: 0
+  spil:
+    low: 0.05
+    high: 0.17
+    sun:
+      spil: true
+      particle: false
+    cave:
+      spil: true
+      particle: false
+    end:
+      spil: true
+      particle: false
+
+stage_2:
+  Tfrom: 648000
+  message: '&5Ваш организм подводит Вас, Вы слабы...'
+  main:
+    low: 0.0
+    high: 0.07
+    sun:
+      particle: true
+      effects:
+        SATURATION:
+          duration: 400
+          power: 0
+        DAMAGE_RESISTANCE:
+          duration: 400
+          power: 0
+        SLOW:
+          duration: 400
+          power: 0
+      damage: 10
+    cave:
+      particle: true
+      effects:
+        SATURATION:
+          duration: 400
+          power: 0
+        DAMAGE_RESISTANCE:
+          duration: 400
+          power: 0
+      damage: 10
+    end:
+      particle: true
+      effects:
+        SATURATION:
+          duration: 400
+          power: 0
+        DAMAGE_RESISTANCE:
+          duration: 400
+          power: 0
+      damage: 10
+  spil:
+    low: 0.05
+    high: 0.17
+    sun:
+      spil: true
+      particle: false
+    cave:
+      spil: true
+      particle: false
+    end:
+      spil: true
+      particle: false
+stage_3:
+  Tfrom: 1080000
+  message: '&5Ваша кожа становится прочнее, но почему-то пропал аппетит...'
+  main:
+    low: 0.0
+    high: 0.07
+    sun:
+      particle: true
+      effects:
+        SATURATION:
+          duration: 600
+          power: 0
+        DAMAGE_RESISTANCE:
+          duration: 200
+          power: 1
+      damage: 20
+    cave:
+      particle: true
+      effects:
+        SATURATION:
+          duration: 600
+          power: 0
+        DAMAGE_RESISTANCE:
+          duration: 200
+          power: 1
+      damage: 10
+    end:
+      particle: true
+      effects:
+        SATURATION:
+          duration: 600
+          power: 0
+        DAMAGE_RESISTANCE:
+          duration: 200
+          power: 1
+      damage: 10
+  spil:
+    low: 0.05
+    high: 0.17
+    sun:
+      spil: true
+      particle: false
+    cave:
+      spil: true
+      particle: false
+    end:
+      spil: true
+      particle: false
+stage_4:
+  Tfrom: 1512000
+  message: '&5Ваша кровь отравляет Вас...'
+  main:
+    low: 0.0
+    high: 0.07
+    sun:
+      particle: true
+      effects:
+        SATURATION:
+          duration: 20
+          power: 2
+        DAMAGE_RESISTANCE:
+          duration: 300
+          power: 4
+        POISON:
+          duration: 200
+          power: 1
+        BLINDNESS:
+          duration: 50
+          power: 0
+      damage: 15
+    cave:
+      particle: true
+      effects:
+        SATURATION:
+          duration: 20
+          power: 4
+        DAMAGE_RESISTANCE:
+          duration: 300
+          power: 2
+        SLOW_DIGGING:
+          duration: 300
+          power: 1
+        NIGHT_VISION:
+          duration: 140
+          power: 0
+    end:
+      particle: true
+      effects:
+        SATURATION:
+          duration: 20
+          power: 5
+        DAMAGE_RESISTANCE:
+          duration: 300
+          power: 3
+        SLOW_DIGGING:
+          duration: 100
+          power: 1
+        NIGHT_VISION:
+          duration: 140
+          power: 0
+  spil:
+    low: 0.05
+    high: 0.17
+    sun:
+      spil: true
+      particle: false
+    cave:
+      spil: true
+      particle: false
+    end:
+      spil: true
+      particle: false
+
+  elytr:
+    low: 0.23
+    high: 0.38
+    sun:
+      elytra: true
+      particle: true
+    cave:
+      elytra: true
+      particle: true
+    end:
+      elytra: true
+      particle: true
+
+stage_5:
+  Tfrom: 1944000
+  message: '&5Вы стали быстры, но чувствуете себя ужасно...'
+  main:
+    low: 0.0
+    high: 0.07
+    sun:
+      particle: true
+      effects:
+        ABSORPTION:
+          duration: 800
+          power: 1
+        REGENERATION:
+          duration: 400
+          power: 0
+        SPEED:
+          duration: 300
+          power: 0
+        DARKNESS:
+          duration: 100
+          power: 1
+        GLOWING:
+          duration: 700
+          power: 0
+      damage: 10
+    cave:
+      particle: true
+      effects:
+        ABSORPTION:
+          duration: 1000
+          power: 2
+        REGENERATION:
+          duration: 600
+          power: 1
+        SPEED:
+          duration: 600
+          power: 1
+        DARKNESS:
+          duration: 200
+          power: 1
+        BLINDNESS:
+          duration: 200
+          power: 1
+        GLOWING:
+          duration: 400
+          power: 0
+    end:
+      particle: true
+      effects:
+        ABSORPTION:
+          duration: 700
+          power: 2
+        REGENERATION:
+          duration: 700
+          power: 1
+        SPEED:
+          duration: 600
+          power: 1
+        FAST_DIGGING:
+          duration: 400
+          power: 3
+        GLOWING:
+          duration: 400
+          power: 0
+  spil:
+    low: 0.05
+    high: 0.17
+    sun:
+      spil: true
+      particle: false
+    cave:
+      spil: true
+      particle: false
+    end:
+      spil: true
+      particle: false
+
+  elytr:
+    low: 0.25
+    high: 0.45
+    sun:
+      elytra: true
+      particle: true
+    cave:
+      elytra: true
+      particle: true
+    end:
+      elytra: true
+      particle: true
+
+  drop:
+    low: 0.996
+    high: 0.999
+    sun:
+      drop: true
+      particle: true
+    cave:
+      elytra: true
+      particle: true
+    end:
+      elytra: true
+      particle: true
+
+
+
+stage_6:
+  Tfrom: 2376000
+  message: '&5Ваши глаза немеют, Ваш рассудок сломан...'
+  main:
+    low: 0.0
+    high: 0.07
+    sun:
+      particle: true
+      effects:
+        ABSORPTION:
+          duration: 1000
+          power: 1
+        WEAKNESS:
+          duration: 500
+          power: 1
+        DAMAGE_RESISTANCE:
+          duration: 400
+          power: 2
+        FIRE_RESISTANCE:
+          duration: 500
+          power: 0
+        INVISIBILITY:
+          duration: 500
+          power: 0
+    cave:
+      particle: true
+      effects:
+        ABSORPTION:
+          duration: 1200
+          power: 1
+        WEAKNESS:
+          duration: 300
+          power: 0
+        DAMAGE_RESISTANCE:
+          duration: 400
+          power: 3
+        FIRE_RESISTANCE:
+          duration: 600
+          power: 0
+        INVISIBILITY:
+          duration: 600
+          power: 0
+    end:
+      particle: true
+      effects:
+        ABSORPTION:
+          duration: 1200
+          power: 3
+        LEVITATION:
+          duration: 40
+          power: 8
+        POISON:
+          duration: 200
+          power: 0
+        DAMAGE_RESISTANCE:
+          duration: 600
+          power: 3
+        FIRE_RESISTANCE:
+          duration: 700
+          power: 0
+        INVISIBILITY:
+          duration: 700
+          power: 1
+  spil:
+    low: 0.05
+    high: 0.17
+    sun:
+      spil: true
+      particle: false
+    cave:
+      spil: true
+      particle: false
+    end:
+      spil: true
+      particle: false
+
+  elytr:
+    low: 0.3
+    high: 0.65
+    sun:
+      elytra: true
+      particle: true
+    cave:
+      elytra: true
+      particle: true
+    end:
+      elytra: true
+      particle: true
+
+  drop:
+    low: 0.9972
+    high: 0.999
+    sun:
+      drop: true
+      particle: true
+    cave:
+      elytra: true
+      particle: true
+    end:
+      elytra: true
+      particle: true
+
+
+  dragon:
+    low: 0.9995
+    high: 0.9999
+    sun:
+      dragon: true
+      particle: true
+    cave:
+      dragon: true
+      particle: true
+    end:
+      dragon: true
+      particle: true
+
+stage_7:
+  Tfrom: 5184000
+  message: '&5Изредко огонь не помеха Вам, но какой ценой...'
+  main:
+    low: 0.0
+    high: 0.06
+    sun:
+      particle: true
+      effects:
+        ABSORPTION:
+          duration: 1200
+          power: 4
+        HUNGER:
+          duration: 600
+          power: 2
+        REGENERATION:
+          duration: 1000
+          power: 0
+        DAMAGE_RESISTANCE:
+          duration: 600
+          power: 3
+        FIRE_RESISTANCE:
+          duration: 800
+          power: 0
+    cave:
+      particle: true
+      effects:
+        REGENERATION:
+          duration: 1000
+          power: 0
+        ABSORPTION:
+          duration: 800
+          power: 3
+        HUNGER:
+          duration: 300
+          power: 2
+        DAMAGE_RESISTANCE:
+          duration: 1100
+          power: 3
+        FIRE_RESISTANCE:
+          duration: 1400
+          power: 0
+    end:
+      particle: true
+      effects:
+        REGENERATION:
+          duration: 1000
+          power: 1
+        ABSORPTION:
+          duration: 1600
+          power: 4
+        DAMAGE_RESISTANCE:
+          duration: 1400
+          power: 5
+        FIRE_RESISTANCE:
+          duration: 1400
+          power: 0
+        SATURATION:
+          duration: 800
+          power: 1
+  spil:
+    low: 0.05
+    high: 0.17
+    sun:
+      spil: true
+      particle: false
+    cave:
+      spil: true
+      particle: false
+    end:
+      spil: true
+      particle: false
+
+  elytr:
+    low: 0.35
+    high: 0.75
+    sun:
+      elytra: true
+      particle: true
+    cave:
+      elytra: true
+      particle: true
+    end:
+      elytra: true
+      particle: true
+
+  drop:
+    low: 0.99
+    high: 0.999
+    sun:
+      drop: true
+      particle: true
+    cave:
+      elytra: true
+      particle: true
+    end:
+      elytra: true
+      particle: true
+
+  dragon:
+    low: 0.9993
+    high: 0.9999
+    sun:
+      dragon: true
+      particle: true
+    cave:
+      dragon: true
+      particle: true
+    end:
+      dragon: true
+      particle: true
+  endermite:
+    low: 0.8
+    high: 0.8015
+    sun:
+      endermite: 4
+      particle: true
+    cave:
+      endermite: 3
+      particle: true
+    end:
+      endermite: 5
+      particle: true
+  endersound:
+    low: 0.9
+    high: 0.9015
+    sun:
+      endersound: true
+      particle: true
+    cave:
+      endersound: true
+      particle: true
+    end:
+      endersound: true
+      particle: true
+stage_8:
+  Tfrom: 8640000
+  message: '&5Ваш организм расцвёл, Вы почти достигли апофиоза...'
+  main:
+    low: 0.0
+    high: 0.07
+    sun:
+      particle: true
+      effects:
+        ABSORPTION:
+          duration: 1000
+          power: 3
+        SATURATION:
+          duration: 2
+          power: 255
+        REGENERATION:
+          duration: 800
+          power: 0
+        DAMAGE_RESISTANCE:
+          duration: 800
+          power: 4
+        FIRE_RESISTANCE:
+          duration: 1200
+          power: 0
+        CONFUSION:
+          duration: 1000
+          power: 1
+    cave:
+      particle: true
+      effects:
+        ABSORPTION:
+          duration: 1100
+          power: 3
+        SATURATION:
+          duration: 2
+          power: 255
+        REGENERATION:
+          duration: 800
+          power: 0
+        DAMAGE_RESISTANCE:
+          duration: 800
+          power: 3
+        FIRE_RESISTANCE:
+          duration: 1200
+          power: 0
+        CONFUSION:
+          duration: 1000
+          power: 1
+    end:
+      particle: true
+      effects:
+        ABSORPTION:
+          duration: 1400
+          power: 3
+        SATURATION:
+          duration: 5
+          power: 255
+        REGENERATION:
+          duration: 1000
+          power: 1
+        DAMAGE_RESISTANCE:
+          duration: 1000
+          power: 3
+        FIRE_RESISTANCE:
+          duration: 1400
+          power: 0
+        CONFUSION:
+          duration: 1000
+          power: 1
+
+  spil:
+    low: 0.05
+    high: 0.17
+    sun:
+      spil: true
+    cave:
+      spil: true
+    end:
+      spil: true
+
+  elytr:
+    low: 0.3
+    high: 0.85
+    sun:
+      elytra: true
+      particle: true
+    cave:
+      elytra: true
+      particle: true
+    end:
+      elytra: true
+      particle: true
+
+  drop:
+    low: 0.987
+    high: 0.999
+    sun:
+      drop: true
+      particle: true
+    cave:
+      elytra: true
+      particle: true
+    end:
+      elytra: true
+      particle: true
+
+  dragon:
+    low: 0.9976
+    high: 0.9999
+    sun:
+      dragon: true
+      particle: true
+    cave:
+      dragon: true
+      particle: true
+    end:
+      dragon: true
+      particle: true
+  fire:
+    low: 0.5
+    high: 0.6
+    sun:
+      fire: 200
+      particle: true
+    cave:
+      fire: 180
+      particle: true
+    end:
+      fire: 100
+      particle: true
+  endermite:
+    low: 0.8
+    high: 0.8015
+    sun:
+      endermite: 4
+      particle: true
+    cave:
+      endermite: 3
+      particle: true
+    end:
+      endermite: 5
+      particle: true
+  endersound:
+    low: 0.9
+    high: 0.9015
+    sun:
+      endersound: true
+      particle: true
+    cave:
+      endersound: true
+      particle: true
+    end:
+      endersound: true
+      particle: true
+stage_9:
+  Tfrom: 9999999999999999999999999999999

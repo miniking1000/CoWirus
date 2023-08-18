@@ -1,0 +1,57 @@
+name: CoWirus
+version: '1.1'
+main: org.pythonchik.cowirus.CoWirus
+api-version: '1.20'
+commands:
+  infect:
+    description: infects players
+    permission: CoWirus.infect
+    usage: /infect player ticks
+  cure:
+    description: cures players
+    permission: CoWirus.cure
+    usage: /cure player
+  status:
+    description: shows status of players
+    permission: CoWirus.status
+    usage: /status player
+  CoWreload:
+    description: reloads config of players
+    permission: CoWirus.CoWreload
+    usage: /CoWreload
+  cowuse:
+    description: triggers an effect
+    permission: CoWirus.cowuse
+    usage: /cowuse
+  tempcure:
+    description: temporary cures person
+    permission: CoWirus.tempcure
+    usage: /tempcure
+  concure:
+    description: gives immunity to virus
+    permission: CoWirus.concure
+    usage: /concure
+
+permissions:
+  CoWirus.infect:
+    default: op
+    description: allows to use infect command
+  CoWirus.cure:
+    default: op
+    description: allows to use cure command
+  CoWirus.status:
+    default: op
+    description: allows to use status command
+  CoWirus.CoWreload:
+    default: op
+    description: allows to use CoWireload command
+  CoWirus.cowuse:
+    default: op
+    description: allows to use cowuse command
+  CoWirus.tempcure:
+    default: op
+    description: allows to use tempcure command
+  CoWirus.concure:
+    default: op
+    description: allows to use concure command
+
